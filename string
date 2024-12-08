@@ -4,3 +4,55 @@ let lastindex=string.length-1;
 console.log(string.length);
 console.log(string[lastindex]);//
 console.log(string[string.length]);//will print undefined
+
+//using charAt for getting values at index
+console.log(string.charAt(0));
+
+//using codeat for getting ASCII value of character
+console.log(string.charCodeAt(0)) // m ASCII number is 109
+
+//concatenating string
+console.log(string.concat(" from", " India"))//myNameIsDiksha from India
+
+//endswith and startswith
+console.log(string.endsWith('sha')) // true
+console.log(string.startsWith('sha')) // true
+
+//includes():- 
+// It checks if a substring exist in a string and it returns true if it exists and false if it doesn't exist.
+console.log(string.includes("Is"));//true
+
+//indexOf() to get index of characters or substrings(gives index of strting letter)
+console.log(string.indexOf('IsD'));//6 (of I)
+console.log(string.indexOf('is'));//-1 as it is not in string
+
+//lastIndexOf():  it will return the last occurrence of the substring .
+console.log(string.lastIndexOf('Name'));//2
+
+//match: it takes a substring or regular expression pattern as an argument and it returns an array if there is match if not it returns null.
+string2="Diksha";
+string3="diksha";
+console.log(string.match(string2));//['Diksha', index: 8, input: 'myNameIsDiksha', groups: undefined]0: "Diksha"groups: undefinedindex: 8input: "myNameIsDiksha"length: 1[[Prototype]]: Array(0)
+console.log(string.match(string3));//null
+
+//repeat,replace,search,split,touppercase,tolowercase
+let str = 'love'
+console.log(str.repeat(10)) // lovelovelovelovelovelovelovelovelovelove
+console.log(string.replace("Is","am"));
+sole.log(string.split());//['myNameIsDiksha']
+console.log(string.split(''));//(14) ['m', 'y', 'N', 'a', 'm', 'e', 'I', 's', 'D', 'i', 'k', 's', 'h', 'a']
+console.log(string.toLowerCase());//mynameisdiksha
+console.log(string.toUpperCase());//MYNAMEISDIKSHA
+
+//substring:
+console.log(string.substring(4,7));//meI
+//slicing:  .substr(starting index,no. of characters to slice)
+console.log(string.substr(4,6));//meIsDi 
+
+ //trim: Removes trailing space in the beginning or the end of a string.
+console.log(string.trim());//myNameIsDiksha
+console.log(string.trim(' '));//
+
+
+
+
